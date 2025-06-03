@@ -52,7 +52,7 @@ export default function MusicaPage() {
       {/* Letra animada */}
  <p className="text-pink-700 text-base md:text-lg leading-relaxed max-w-2xl mt-6 animate-fade-in">
   <em>
-    “Temo a caer y que no estés contigo” <br />
+    “Temo a caer y que no estés conmigo” <br />
     “Te ofrezco amor real de un corazón sincero” <br />
     “Y quemar la llave que abrió el laberinto” 🎶
   </em>
