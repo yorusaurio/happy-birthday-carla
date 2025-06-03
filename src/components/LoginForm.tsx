@@ -12,7 +12,7 @@ export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (username === 'carla' && password === 'cocker12345') {
+    if (username === 'carla' && password === 'cockercarla12345') {
       localStorage.setItem('isLoggedIn', 'true');
       router.push('/');
     } else {
