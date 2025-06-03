@@ -12,9 +12,19 @@ export default function LoginForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    const today = new Date();
+    const day = today.getDate();
+    const month = today.getMonth() + 1; // ¡Ojo! getMonth() devuelve 0-11, por eso le sumamos 1
+
+    const isCorrectDate = day === 3 && month === 6;
+
     if (username === 'Cocker14' && password === 'Carla032420') {
-      localStorage.setItem('isLoggedIn', 'true');
-      router.push('/');
+      if (isCorrectDate) {
+        localStorage.setItem('isLoggedIn', 'true');
+        router.push('/');
+      } else {
+        setError('Solo puedes ingresar el 03/06 de cada año 🎂✨');
+      }
     } else {
       setError('Usuario o contraseña incorrectos 🥺');
     }
