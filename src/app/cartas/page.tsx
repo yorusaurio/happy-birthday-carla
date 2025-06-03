@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 const cartas = [
   {
     titulo: 'Carta 1',
@@ -27,24 +25,15 @@ export default function CartasPage() {
         Palabras que quiero dedicarte con todo mi amor ✨.
       </p>
 
-      {/* Grid de cartas */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl w-full">
+      {/* Grid de cartas responsivo */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full">
         {cartas.map((carta, index) => (
           <div
             key={index}
-            className="group [perspective:1000px] cursor-pointer"
+            className="bg-white/80 border-4 border-pink-200 rounded-xl shadow-lg p-6 flex flex-col justify-between text-pink-700 hover:scale-105 transition-transform"
           >
-            <div className="relative h-64 w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Cara frontal */}
-              <div className="absolute inset-0 bg-white/80 border-4 border-pink-200 rounded-xl shadow-lg flex items-center justify-center text-pink-800 text-2xl font-bold">
-                {carta.titulo}
-              </div>
-
-              {/* Cara trasera */}
-              <div className="absolute inset-0 bg-white/90 border-4 border-pink-300 rounded-xl shadow-lg p-4 text-pink-700 text-base leading-relaxed [transform:rotateY(180deg)] [backface-visibility:hidden] flex items-center justify-center">
-                {carta.contenido}
-              </div>
-            </div>
+            <h2 className="text-xl font-bold text-pink-800 mb-4">{carta.titulo}</h2>
+            <p className="text-base leading-relaxed">{carta.contenido}</p>
           </div>
         ))}
       </div>
