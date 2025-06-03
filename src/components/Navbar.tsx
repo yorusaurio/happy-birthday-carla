@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gradient-to-r from-pink-100 via-purple-100 to-sky-100 py-3 px-6 flex justify-between items-center sticky top-0 z-50 shadow-md rounded-b-xl">
       <h1 className="text-xl font-semibold text-pink-700 tracking-wide">
-        💖 Carla's Portal
+        💖 Carla&apos;s Portal
       </h1>
       <div className="flex gap-3 text-pink-700 font-medium items-center">
         <Link
