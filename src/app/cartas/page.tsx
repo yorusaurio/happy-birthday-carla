@@ -3,17 +3,18 @@
 const cartas = [
   {
     titulo: 'Carta 1',
-    contenido: 'Mi amor, desde que llegaste a mi vida todo es más bonito. Eres mi felicidad diaria 💖.'
+    contenido: 'Mi amor, desde que llegaste a mi vida todo es más bonito. Cada instante contigo se ha convertido en un recuerdo que guardo en lo más profundo de mi corazón. Eres mi felicidad diaria, la razón por la que sonrío cada mañana. Gracias por enseñarme que el amor verdadero existe y que a tu lado todo es posible. Te adoro infinitamente 💖.'
   },
   {
     titulo: 'Carta 2',
-    contenido: 'Cada día a tu lado es un regalo. Te amo con todo mi corazón y más allá del infinito ✨.'
+    contenido: 'Cada día a tu lado es un regalo que el universo me ha dado. Tu risa, tu voz, tus abrazos son el refugio perfecto para mi alma. No hay palabras que puedan describir lo que siento por ti, porque te amo con todo mi corazón y más allá del infinito. Eres mi mejor aventura, mi hogar, y cada día deseo seguir construyendo este hermoso camino contigo ✨.'
   },
   {
     titulo: 'Carta 3',
-    contenido: 'Gracias por ser tú, por tu sonrisa, tu ternura y por todos los momentos hermosos que compartimos 💓.'
+    contenido: 'Gracias por ser tú, por tu sonrisa que ilumina mis días, por tu ternura que me envuelve en cada abrazo, y por todos los momentos hermosos que compartimos. A tu lado he aprendido lo que es amar sin condiciones, lo que es soñar despierto, lo que es sentirse completo. Eres mi persona favorita, mi confidente, mi amor eterno 💓.'
   }
 ];
+
 
 export default function CartasPage() {
   return (

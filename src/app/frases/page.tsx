@@ -6,16 +6,18 @@ const frases = [
   "Te mato si me dices la escala de 1-10 🎶",
   "Que gei que eres 💓",
   "No me presiones ❤️",
-  "No me caes 🌟"
+  "No me caes 🌟",
+  "El que llora es gei 🌟",
+  "Te amo 3 millones 💓",
 ];
 
 export default function FrasesPage() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(() => Math.floor(Math.random() * frases.length));
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % frases.length);
-    }, 4000); // cambia cada 4s
+      setIndex(() => Math.floor(Math.random() * frases.length));
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
