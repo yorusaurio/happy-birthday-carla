@@ -25,7 +25,7 @@ export default function FrasesPage() {
         🌸 Frases favoritas 💖
       </h1>
       <p className="text-xl text-pink-700 animate-fade-in">
-        "{frases[index]}"
+        {`“${frases[index]}”`}
       </p>
     </div>
   );

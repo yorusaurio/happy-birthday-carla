@@ -50,13 +50,14 @@ export default function MusicaPage() {
       </button>
 
       {/* Letra animada */}
-      <p className="text-pink-700 text-base md:text-lg leading-relaxed max-w-2xl mt-6 animate-fade-in">
+ <p className="text-pink-700 text-base md:text-lg leading-relaxed max-w-2xl mt-6 animate-fade-in">
   <em>
-    "Temo a caer y que no estés conmigo" <br />
-    "Te ofrezco amor real de un corazón sincero" <br />
-    "Y quemar la llave que abrió el laberinto" 🎶
+    “Temo a caer y que no estés contigo” <br />
+    “Te ofrezco amor real de un corazón sincero” <br />
+    “Y quemar la llave que abrió el laberinto” 🎶
   </em>
 </p>
+
 
 
 
